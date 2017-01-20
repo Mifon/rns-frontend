@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ренессанс</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+<body>
+
+	<div class="l-container">
+		
+		<div class="header">
+			<div class="header__wrapper">
+				<div class="header__row">
+					<div class="header__logo-box">
+						<a href="/" class="header__logo"></a>
+					</div>
+					<div class="header__menu-box">
+						<div class="header-menu">
+							<ul class="header-menu__list">
+								<li class="header-menu__item">
+									<a href="#" class="header-menu__link">Портфель</a>
+								</li>
+								<li class="header-menu__item">
+									<a href="#" class="header-menu__link">Вознаграждение</a>
+								</li>
+								<li class="header-menu__item">
+									<a href="#" class="header-menu__link">Рейтинг</a>
+								</li>
+								<li class="header-menu__item">
+									<a href="#" class="header-menu__link">Обучение</a>
+								</li>
+								<li class="header-menu__item">
+									<a href="#" class="header-menu__link">Новости</a>
+								</li>
+								<li class="header-menu__item">
+									<a href="#" class="header-menu__link">Оформление договоров</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="header__profile-box">
+						<div class="header-user">
+							<i class="header-user__icon"></i>
+							<span class="header-user__name">Константинова А.В.</span>
+						</div>
+						<div class="header__user-popup user-popup">
+							<img src="img/user_default.jpg" class="user-popup__img">
+							<div class="user-popup__info">
+								<span>Договор: 12345678 от 02.02.2010</span><br>
+								<span>Статус: агент</span>
+								<div class="user-popup__link-box">
+									<a href="#" class="user-popup__link">Дерево агента</a><br>
+									<a href="#" class="user-popup__link">Выйти</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header__notif-box">
+						<div class="header-notif">
+							<i class="header-notif__icon"></i>
+							<span class="header-notif__text">4</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="l-content">
+			<div class="main-title">
+				<h1 class="main-title__title">Агенты</h1>
+				<a href="#agent-popup" class="btn btn-success btn-link main-title__btn js-openAgentPopup">Добавить агента</a>
+			</div>
+			<div class="agent-page">
+				<div class="input-box agent-page__filter">
+					<div class="input-box__row">
+						<div class="input-box__title m--first">ФИО агента:</div>
+						<div class="input-box__value">
+							<input type="text" class="login-box__input" placeholder="Логин">
+						</div>
+						<div class="input-box__title">Роли:</div>
+						<div class="input-box__value">
+							<select name="" id="">
+								<option value="">Все роли</option>
+								<option value="">Второй</option>
+							</select>
+						</div>
+						<div class="input-box__title">Статус:</div>
+						<div class="input-box__value">
+							<select name="" id="">
+								<option value="">Все статусы</option>
+								<option value="">Второй</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<table class="default-table agent-table">
+					<thead>
+						<tr>
+							<th>Агент</th>
+							<th>Email</th>
+							<th>Роль</th>
+							<th>Статус</th>
+							<th>Добавлен</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><a href="#">Иванова Алиса Юрьевна</a></td>
+							<td><a href="#">ivanov@mail.com</a></td>
+							<td>Администратор</td>
+							<td>Активен</td>
+							<td>Из Борласа</td>
+							<td class="default-table__ctrl-cell">
+								<img src="../img/edit_icon.png" alt="edit_icon.png" class="default-table__ctrl-link">
+							</td>
+						</tr>
+						<tr>
+							<td><a href="#">Иванова Алиса Юрьевна</a></td>
+							<td><a href="#">ivanov@mail.com</a></td>
+							<td>Администратор</td>
+							<td>Активен</td>
+							<td>Из Борласа</td>
+							<td class="default-table__ctrl-cell">
+								<img src="../img/edit_icon.png" alt="edit_icon.png" class="default-table__ctrl-link">
+							</td>
+						</tr>
+						<tr>
+							<td><a href="#">Иванова Алиса Юрьевна</a></td>
+							<td><a href="#">ivanov@mail.com</a></td>
+							<td>Администратор</td>
+							<td>Активен</td>
+							<td>Из Борласа</td>
+							<td class="default-table__ctrl-cell">
+								<img src="../img/edit_icon.png" alt="edit_icon.png" class="default-table__ctrl-link">
+							</td>
+						</tr>
+						<tr>
+							<td><a href="#">Иванова Алиса Юрьевна</a></td>
+							<td><a href="#">ivanov@mail.com</a></td>
+							<td>Администратор</td>
+							<td>Активен</td>
+							<td>Из Борласа</td>
+							<td class="default-table__ctrl-cell">
+								<img src="../img/edit_icon.png" alt="edit_icon.png" class="default-table__ctrl-link">
+							</td>
+						</tr>
+						<tr>
+							<td><a href="#">Иванова Алиса Юрьевна</a></td>
+							<td><a href="#">ivanov@mail.com</a></td>
+							<td>Администратор</td>
+							<td>Активен</td>
+							<td>Из Борласа</td>
+							<td class="default-table__ctrl-cell">
+								<img src="../img/edit_icon.png" alt="edit_icon.png" class="default-table__ctrl-link">
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div id="agent-popup" class="popup mfp-hide agent-popup agent-page__popup">
+					<div class="popup__main-title">Редактирование агента</div>
+					<div class="popup__wrapper">
+						<table class="agent-popup__table">
+							<tr>
+								<td class="agent-popup__title">Фамилия:</td>
+								<td class="agent-popup__value">
+									<input type="text">
+								</td>
+							</tr>
+							<tr>
+								<td class="agent-popup__title">Имя:</td>
+								<td class="agent-popup__value">
+									<input type="text">
+								</td>
+							</tr>
+							<tr>
+								<td class="agent-popup__title">Отчество:</td>
+								<td class="agent-popup__value">
+									<input type="text">
+								</td>
+							</tr>
+							<tr>
+								<td class="agent-popup__title">Логин:</td>
+								<td class="agent-popup__value">
+									<input type="text">
+								</td>
+							</tr>
+							<tr>
+								<td class="agent-popup__title">Email:</td>
+								<td class="agent-popup__value">
+									<input type="text">
+								</td>
+							</tr>
+							<tr>
+								<td class="agent-popup__title">Роль:</td>
+								<td class="agent-popup__value">
+									<select name="" id="">
+										<option value="">Первый</option>
+										<option value="">Второй</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td class="agent-popup__title">Статус:</td>
+								<td class="agent-popup__value">
+									<select name="" id="">
+										<option value="">Первый</option>
+										<option value="">Второй</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td class="agent-popup__title">Пароль:</td>
+								<td class="agent-popup__value">
+									<a href="#" class="agent-popup__link">Изменить</a>
+									<a href="#" class="agent-popup__link">Сбросить</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="agent-popup__title">Договор:</td>
+								<td class="agent-popup__value">
+									<div class="input-box agent-popup__input-box">
+										<div class="input-box__row">
+											<div class="input-box__value">
+												<input type="text">
+											</div>
+											<div class="input-box__title">От:</div>
+											<div class="input-box__value">
+												<input type="text">
+											</div>
+											<div class="input-box__title">До:</div>
+											<div class="input-box__value">
+												<input type="text">
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="agent-popup__title">Категория:</td>
+								<td class="agent-popup__value">
+									<select name="" id="">
+										<option value="">Первый</option>
+										<option value="">Второй</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td class="agent-popup__title">Тип:</td>
+								<td class="agent-popup__value">
+									<select name="" id="">
+										<option value="">Первый</option>
+										<option value="">Второй</option>
+									</select>
+								</td>
+							</tr>
+						</table>
+						<div class="btn-box popup__btn-box">
+							<input type="button" class="btn btn-success" value="Сохранить">
+							<a href="#" class="btn btn-cancel btn-link js-closePopup">Отмена</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="js/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

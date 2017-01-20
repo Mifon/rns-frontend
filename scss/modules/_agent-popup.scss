@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+.agent-popup {
+	width: 588px;
+	&__table {
+		width: 100%;
+		border-spacing: 15px 17px;
+		@include font($base-font-family, 300);
+		font-size: 14px;
+		color: #666;
+	}
+	&__title, &__value {
+		vertical-align: middle;
+	}
+	&__title {
+		@include nowrap-cell;
+	}
+	&__value {
+		input[type="text"],
+		input[type="password"],
+		select {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+	&__input-box {
+		border-spacing: 0;
+		.input-box__title {
+			padding-left: 1.2em;
+		}
+	}
+	&__link {
+		margin: 0 12px 0 4px;
+		@include default-link;
+	}
+}

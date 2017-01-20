@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+.contract-info {
+	@include inline-box;
+	&__item {
+		@include inline-item;
+		width: 50%;
+		&.m--left {
+			padding-right: 14px;
+		}
+		&.m--right {
+			padding-left: 14px;
+		}
+	}
+	&__table {
+		display: table;
+		width: 100%;
+		@include font($base-font-family, 300);
+	}
+	&__row {
+		display: table-row;
+		& > div {
+			display: table-cell;
+			vertical-align: top;
+		}
+		&:nth-child(odd) {
+			background: #f7f7f7;
+		}
+	}
+	&__title {
+		@include nowrap-cell;
+		padding: 7px 33px 7px 14px;
+	}
+	&__value {
+		padding: 7px 12px 7px 0;
+		a {
+			@include default-link;
+		}
+	}
+}

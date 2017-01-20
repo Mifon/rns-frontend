@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+.default-table {
+	margin-top: 24px;
+	width: 100%;
+	border: none;
+	border-spacing: 0;
+	@include font($base-font-family, 300);
+	font-size: 14px;
+	color: #333;
+	th {
+		font-weight: 300;
+		text-align: left;
+		padding: 0 27px 11px 0;
+		white-space: nowrap;
+	}
+	td {
+		padding: 7px 27px 7px 0;	
+		a {
+			@include link-color(#09f);
+			@include underline('first');
+		}
+	}
+	th, td {
+		&:first-child {
+			padding-left: 20px;
+		}
+	}
+	& &__ctrl-cell {
+		@include nowrap-cell;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	&__ctrl-link {
+		visibility: hidden;
+		display: inline-block;
+		.default-table tr:hover & {
+			visibility: visible;
+		}
+	}
+	tbody tr {
+		&:nth-child(odd) {
+			background: #f7f7f7;
+		}
+		&:hover {
+			background: #d3d3d3;
+		}
+	}
+}

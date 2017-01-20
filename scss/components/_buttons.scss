@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+.btn-box {
+	@include inline-box;
+	margin-bottom: -20px;
+	.btn {
+		@include inline-item;
+		margin-left: 0.95em;
+		margin-bottom: 20px;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
+.btn {
+	display: inline-block;
+	vertical-align: top;
+	padding: 8px 19px 9px;
+	font-size: 14px;
+	background: #989898;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	outline: none;
+	@include font($base-font-family, 300);
+	color: #989898;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.btn.btn-lg {
+	padding: 17px 23px;
+	font-size: 18px;
+	border-radius: 6px;
+}
+
+.btn.btn-md {
+	padding: 8px 19px 9px;
+	font-size: 14px;
+}
+
+.btn.btn-default {
+	background: #fff;
+	color: #333;
+	border-color: #ccc;
+	&:hover {
+		background: darken(#fff, 5%);
+	}
+}
+
+.btn.btn-active {
+	background: #670b78;
+	color: #fff;
+	border-color: #670b78;
+	&:hover {
+		background: #670b78;
+		cursor: default;
+	}
+}
+
+.btn.btn-success {
+	background: #48ab17;
+	border-color: #48ab17;
+	color: #fff;
+	&:hover {
+		background: darken(#48ab17, 5%);
+	}
+}
+
+.btn.btn-cancel {
+	background: #989898;
+	border-color: #989898;
+	color: #fff;
+	&:hover {
+		background: darken(#989898, 5%);
+	}
+}
+
+.btn.btn-link {
+	@include underline('none');
+}

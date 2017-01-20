@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+html, body {
+	@include font($base-font-family);
+	font-size: $base-font-size;
+	color: $base-color;
+	line-height: $base-line-height;
+	height: 100%;
+}
+
+html {
+	@include box-sizing('border-box');
+}
+
+body {
+	background: #fff;
+}
+
+* {
+	@include box-sizing('inherit');
+}
+
+a {
+	@include default-link;
+}
+
+.nobr {
+	white-space: nowrap;
+}
+
+.main-title {
+	&__title, &__btn {
+		display: inline-block;
+		vertical-align: top;
+	}
+	&__title {
+		margin: 0;
+		@include font($base-font-family);
+		font-size: 26px;
+		line-height: 35px;
+		color: #670b78;
+	}
+	&__btn {
+		margin-left: 4px;
+	}
+}

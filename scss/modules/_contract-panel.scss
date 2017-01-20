@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+.contract-pnl {
+	display: table;
+	width: 100%;
+	min-height: 70px;
+	@include font($base-font-family, 300);
+	font-size: 14px;
+	line-height: $base-line-height;
+	color: #333;
+	&__row {
+		display: table-row;
+		& > div {
+			display: table-cell;
+			vertical-align: top;
+			background: #f7f7f7;
+			padding-top: 11px;
+			padding-bottom: 11px;
+		}
+	}
+	& &__icon-cell {
+		@include nowrap-cell;
+		position: relative;
+		background: #48ab17;
+		border-radius: 6px 0px 0px 6px;
+	}
+	&__icon-spacer {
+		width: 70px;
+	}
+	&__icon {
+		position: absolute;
+		display: inline-block;
+		top: 50%;
+		left: 50%;
+		margin-top: -13px;
+		margin-left: -10px;
+		width: 20px;
+		height: 26px;
+		background: url('../img/success_doc_icon.png') no-repeat center center;
+	}
+	& &__name-cell {
+		vertical-align: middle;
+		padding-left: 28px;
+		padding-right: 20px;
+		font-size: 16px;
+		a {
+			@include default-link;
+		}
+	}
+	& &__info-cell-1 {
+		@include nowrap-cell;
+		padding-right: 30px;
+	}
+	& &__info-cell-2 {
+		@include nowrap-cell;
+		padding-right: 46px;
+		border-radius: 0 6px 6px 0;
+	}
+}

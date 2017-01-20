@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+.client-table-ctrl {
+	width: 100%;
+	overflow: hidden;
+	@include font($base-font-family);
+	font-size: 14px;
+	line-height: 1.5;
+	&__left {
+		float: left;
+	}
+	&__right {
+		float: right;
+	}
+	&__link {
+		@include link-color(#09f);
+		@include underline('first');
+		&.is-active {
+			@include link-color(inherit);
+			@include underline('none');
+			cursor: text;
+		}
+	}
+	&__icon {
+		margin-left: 30px;
+		vertical-align: middle;
+	}
+}
+
+.client-table {
+	margin-top: 19px;
+	th:first-child {
+		padding-left: 0;
+	}
+	& &__icon-cell {
+		@include nowrap-cell;
+		position: relative;
+		padding: 0 27px 0 0;
+	}
+	&__icon-layout, &__icon-bg, &__icon {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 38px;
+	}
+	&__icon-layout {
+		width: 40px;
+		height: 100%;
+		background: #fff;
+	}
+	&__icon-bg {
+		top: 1px;
+		right: 1px;
+		bottom: 1px;
+		background: #ccc;
+		&.m--success {
+			background: #48ab17;
+		}
+		&.m--error {
+			background: #ff1e00;
+		}
+		&.m--wait {
+			background: #dfab0c;
+		}
+	}
+	&__icon {
+		&.m--success {
+			background: url('../img/icon_success.png') no-repeat center center;
+		}
+		&.m--error {
+			background: url('../img/icon_cross.png') no-repeat center center;
+		}
+		&.m--wait {
+			background: url('../img/icon_clock.png') no-repeat center center;
+		}
+	}
+}

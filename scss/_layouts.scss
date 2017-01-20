@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+.l-container {
+	width: 100%;
+}
+
+.l-wrapper {
+	width: 100%;
+	max-width: $base-wrapper-width;
+	margin: 0 auto;
+}
+
+.l-content {
+	width: 100%;
+	max-width: $base-content-width;
+	margin: 0 auto;
+	padding: 40px 35px 30px 31px;
+}
