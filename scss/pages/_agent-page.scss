@@ -3,3 +3,197 @@
 .agent-page {
 	padding-right: 226px-35px;
 }
+
+.tree-agent {
+	margin-top: 20px;
+	&__list {
+		margin-top: 20px;
+	}
+	& .client-full__info-contact {
+		width: auto;
+	}
+}
+
+
+.Container {
+    padding: 0;
+    margin: 0;
+    & li {
+        list-style-type: none;
+    }
+}
+
+.Expand {
+    width: 45px;
+    height: 70px;
+    float: left;
+}
+
+.Content {
+    margin-left:18px;
+    min-height: 18px;
+
+    margin-left: 45px;
+}
+
+
+* html .Content {
+    height: 18px;
+}
+
+.ExpandOpen > .Expand {
+  text-align: right;
+}
+.ExpandOpen > .Expand::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 13px;
+    background-image: url(../img/tree/minus.png);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    height: 46px;
+    background-position: bottom;
+    z-index: 10;
+    margin-right: 10px;
+    position: absolute;
+    right: 0;
+}
+
+.ExpandClosed > .Expand {
+  text-align: right;
+}
+.ExpandClosed > .Expand::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 46px;
+    background-image: url(../img/tree/plus.png);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    background-position: bottom;
+    z-index: 10;
+    margin-right: 10px;
+    position: absolute;
+    right: 0;
+}
+
+.ExpandLeaf > .Expand::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 1px;
+    background-image: url(../img/tree/leaf.png);
+    background-repeat: repeat-x;
+    vertical-align: middle;
+    width: 100%;
+    margin-left: -2px;
+    margin-top: 35px;
+}
+
+
+.Node {
+    margin-left: 26px;
+    zoom: 1; /* спецсвойство против багов IE6,7. Ставит hasLayout */
+    background-position : top left;
+    background-repeat : repeat-y;
+    background-position-x: 28px;
+    position: relative;
+    overflow: hidden;
+}
+  .Node.ExpandOpen {
+      background-image : url(../img/tree/line.png);
+  }
+  .Node.IsRoot {
+      margin-left: 0;
+      background-position-x: 13px;
+  }
+    .IsRoot > .Expand {
+      width: 30px;
+    }
+    .IsRoot > .Content {
+      margin-left: 30px;
+    }
+    .IsRoot > .Container > .Node {
+      margin-left: 13px;
+    }
+    .IsRoot > .Container > .ExpandLeaf > .Expand::before {
+      width: 50px;
+      margin-left: -10px;
+    }
+  .Container > .Node:last-child > .Expand {
+    position: absolute;
+    height: 100%;
+  }
+  .Container > .Node:last-child.ExpandLeaf  > .Expand::before {
+    height: 100%;
+    margin-top: 30px;
+    background-color: #fff;
+  }
+  .ExpandOpen:not(.IsRoot) > .Expand::after {
+    content: "";
+    display: inline-block;
+    width: 50%;
+    height: 1px;
+    left: 2px;
+    background-image: url(../img/tree/leaf.png);
+    background-repeat: repeat-x;
+    z-index: 5;
+    position: absolute;
+    margin-top: 40px;
+  }
+  .ExpandClosed:not(.IsRoot) > .Expand::after {
+    content: "";
+    display: inline-block;
+    width: 50%;
+    height: 1px;
+    left: 2px;
+    background-image: url(../img/tree/leaf.png);
+    background-repeat: repeat-x;
+    z-index: 5;
+    position: absolute;
+    margin-top: 40px;
+  }
+  .Container > .Node:last-child.ExpandClosed:not(.IsRoot) > .Expand::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    margin-top: 40px;
+    background-color: #fff;
+    z-index: 5;
+    position: absolute;
+    width: 50%;
+    left: 2px;
+    background-image: url(../img/tree/leaf.png);
+    background-repeat: repeat-x;
+  }
+  .Container > .Node:last-child.ExpandOpen:not(.IsRoot)  > .Expand::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    margin-top: 40px;
+    background-color: #fff;
+    z-index: 5;
+    position: absolute;
+    width: 50%;
+    left: 2px;
+    background-image: url(../img/tree/leaf.png);
+    background-repeat: repeat-x;
+  }
+
+.ExpandOpen .Container {
+    display: block;
+}
+.ExpandClosed .Container {
+    display: none;
+}
+.ExpandOpen .Expand,
+.ExpandClosed .Expand {
+    cursor: pointer;
+    position: relative;
+}
+.ExpandLeaf .Expand {
+    cursor: auto;
+}

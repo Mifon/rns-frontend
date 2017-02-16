@@ -8,7 +8,18 @@
 <body>
 
 	<div class="l-container">
-		
+
+		<div class="header-sup">
+			<div class="header-sup__wrapper">
+				<div class="header-sup__left">
+					Вы просматриваете кабинет агента: Иванов Иван Алексеевич
+				</div>
+				<div class="header-sup__right">
+					<a href="">Вернуться в свой кабинет</a>
+				</div>
+			</div>
+		</div>
+
 		<div class="header">
 			<div class="header__wrapper">
 				<div class="header__row">
@@ -73,319 +84,531 @@
 			<div class="page main-page">
 				<div class="main-page__row">
 					<div class="main-page__left">
-						<div class="btn-box main-page__btn-box">
-							<input type="button" class="btn btn-default btn-lg" value="Календарь событий 4">
-							<input type="button" class="btn btn-default btn-lg btn-active" value="Действующие клиенты 45">
-							<input type="button" class="btn btn-default btn-lg" value="Потенциальные клиенты 56">
+						<div class="btn-box main-page__btn-box js-tab-list">
+							<input type="button" class="btn btn-default btn-lg" value="Календарь событий 4" data-content="js-calendar-event">
+							<input type="button" class="btn btn-default btn-lg btn-active" value="Действующие клиенты 45" data-content="js-client-active">
+							<input type="button" class="btn btn-default btn-lg" value="Потенциальные клиенты 56" data-content="js-client-potencial">
 						</div>
-						<div class="input-box main-page__struct-input-box">
-							<div class="input-box__row">
-								<div class="input-box__title m--first">Структура сети:</div>
-								<div class="input-box__value">
-									<select name="" id="">
-										<option value="">Первый</option>
-										<option value="">Второй</option>
-									</select>
+						<div class="main-page__content js-tab-content js-calendar-event" hidden>
+							<div class="event-list-ctrl">
+								<a href="#" class="date-filtr-link">Сегодня</a>
+								<a href="#" class="date-filtr-link is-active">На неделю</a>
+								<a href="#" class="date-filtr-link">На месяц</a>
+								<a href="#" class="date-filtr-link">На год</a>
+							</div>
+							<div class="event-list">
+								<div class="event-list__date">20.12.2016</div>
+								<div class="event-list__item">
+									<div class="event-list__item__title">Заголовок названия события средней длинны</div>
+									<div class="event-list__item__desc">Краткое описание Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</div>
+								</div>
+								<div class="event-list__item">
+									<div class="event-list__item__title">Заголовок названия события средней длинны</div>
+									<div class="event-list__item__desc">Краткое описание Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</div>
+								</div>
+								<div class="event-list__item">
+									<div class="event-list__item__title">Заголовок названия события средней длинны</div>
+									<div class="event-list__item__desc">Краткое описание Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</div>
+								</div>
+								<div class="event-list__date">21.12.2016</div>
+								<div class="event-list__item">
+									<div class="event-list__item__title">Заголовок названия события средней длинны</div>
+									<div class="event-list__item__desc">Краткое описание Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</div>
+								</div>
+								<div class="event-list__item">
+									<div class="event-list__item__title">Заголовок названия события средней длинны</div>
+									<div class="event-list__item__desc">Краткое описание Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</div>
+								</div>
+								<div class="event-list__date">22.12.2016</div>
+								<div class="event-list__item">
+									<div class="event-list__item__title">Заголовок названия события средней длинны</div>
+									<div class="event-list__item__desc">Краткое описание Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</div>
+								</div>
+								<div class="event-list__item">
+									<div class="event-list__item__title">Заголовок названия события средней длинны</div>
+									<div class="event-list__item__desc">Краткое описание Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</div>
+								</div>
+								<div class="event-list__date">23.12.2016</div>
+								<div class="event-list__item">
+									<div class="event-list__item__title">Заголовок названия события средней длинны</div>
+									<div class="event-list__item__desc">Краткое описание Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</div>
+								</div>
+								<div class="event-list__date">25.12.2016</div>
+								<div class="event-list__item">
+									<div class="event-list__item__title">Заголовок названия события средней длинны</div>
+									<div class="event-list__item__desc">Краткое описание Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</div>
+								</div>
+								<div class="event-list__item">
+									<div class="event-list__item__title">Заголовок названия события средней длинны</div>
+									<div class="event-list__item__desc">Краткое описание Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</div>
+								</div>
+								<div class="event-list__date">27.12.2016</div>
+								<div class="event-list__item">
+									<div class="event-list__item__title">Заголовок названия события средней длинны</div>
+									<div class="event-list__item__desc">Краткое описание Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</div>
 								</div>
 							</div>
 						</div>
-						<div class="client-table-ctrl main-page__client-table-ctrl">
-							<div class="client-table-ctrl__left">45 клиентов на сумму 3 699 598 ₽</div>
-							<div class="client-table-ctrl__right">
-								Представление: 
-								<a href="" class="client-table-ctrl__link">краткое</a> / 
-								<a href="" class="client-table-ctrl__link is-active">полное</a>
-								<img src="img/excel_icon.png" alt="" class="client-table-ctrl__icon">
-								<a href="" class="client-table-ctrl__link">выгрузить в excel</a>
-							</div>
-						</div>
-						<div class="input-box main-page__client-input-box">
-							<div class="input-box__row">
-								<div class="input-box__title m--first">Статус:</div>
-								<div class="input-box__value">
-									<select name="" id="">
-										<option value="">Все (45)</option>
-										<option value="">Второй</option>
-									</select>
-								</div>
-								<div class="input-box__title">Продукты:</div>
-								<div class="input-box__value">
-									<select name="" id="">
-										<option value="">Все (45)</option>
-										<option value="">Второй</option>
-									</select>
-								</div>
-								<div class="input-box__title">Договор:</div>
-								<div class="input-box__value">
-									<input type="text">
+						<div class="main-page__content js-tab-content js-client-active" hidden>
+							<div class="input-box main-page__struct-input-box">
+								<div class="input-box__row">
+									<div class="input-box__title m--first">Структура сети:</div>
+									<div class="input-box__value">
+										<select name="" id="">
+											<option value="">Первый</option>
+											<option value="">Второй</option>
+										</select>
+									</div>
 								</div>
 							</div>
+							<div class="client-table-ctrl main-page__client-table-ctrl">
+								<div class="client-table-ctrl__left">45 клиентов на сумму 3 699 598 ₽</div>
+								<div class="client-table-ctrl__right">
+									Представление:
+									<a href="#" class="client-table-ctrl__link js-activeClientMinList">краткое</a> /
+									<a href="#" class="client-table-ctrl__link is-active js-activeClientFullList">полное</a>
+									<img src="img/excel_icon.png" alt="" class="client-table-ctrl__icon">
+									<a href="" class="client-table-ctrl__link">выгрузить в excel</a>
+								</div>
+							</div>
+							<div class="input-box main-page__client-input-box">
+								<div class="input-box__row">
+									<div class="input-box__title m--first">Статус:</div>
+									<div class="input-box__value">
+										<select name="" id="">
+											<option value="">Все (45)</option>
+											<option value="">Второй</option>
+										</select>
+									</div>
+									<div class="input-box__title">Продукты:</div>
+									<div class="input-box__value">
+										<select name="" id="">
+											<option value="">Все (45)</option>
+											<option value="">Второй</option>
+										</select>
+									</div>
+									<div class="input-box__title">Договор:</div>
+									<div class="input-box__value">
+										<input type="text">
+									</div>
+								</div>
+							</div>
+							<table id="client-active-min-list" class="default-table client-table client-min__list" hidden>
+								<thead>
+									<tr>
+										<th>Статус</th>
+										<th>Договор</th>
+										<th>Страхователь</th>
+										<th>Контакты</th>
+										<th>Продукт</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="client-table__icon-cell">
+											<div class="client-table__icon-layout">
+												<div class="client-table__icon-bg m--success"></div>
+											</div>
+											<i class="client-table__icon m--success"></i>
+										</td>
+										<td>
+											<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
+										</td>
+										<td>Иванов Иван Иванович</td>
+										<td class="nobr">+7 (999) 715 96 85</td>
+										<td>Гармония</td>
+									</tr>
+									<tr>
+										<td class="client-table__icon-cell">
+											<div class="client-table__icon-layout">
+												<div class="client-table__icon-bg m--error"></div>
+											</div>
+											<i class="client-table__icon m--error"></i>
+										</td>
+										<td>
+											<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
+										</td>
+										<td>Иванов Иван Иванович</td>
+										<td class="nobr">+7 (999) 715 96 85</td>
+										<td>Гармония</td>
+									</tr>
+									<tr>
+										<td class="client-table__icon-cell">
+											<div class="client-table__icon-layout">
+												<div class="client-table__icon-bg m--wait"></div>
+											</div>
+											<i class="client-table__icon m--wait"></i>
+										</td>
+										<td>
+											<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
+										</td>
+										<td>Иванов Иван Иванович</td>
+										<td class="nobr">+7 (999) 715 96 85</td>
+										<td>Гармония</td>
+									</tr>
+									<tr>
+										<td class="client-table__icon-cell">
+											<div class="client-table__icon-layout">
+												<div class="client-table__icon-bg m--success"></div>
+											</div>
+											<i class="client-table__icon m--success"></i>
+										</td>
+										<td>
+											<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
+										</td>
+										<td>Иванов Иван Иванович</td>
+										<td class="nobr">+7 (999) 715 96 85</td>
+										<td>Гармония</td>
+									</tr>
+									<tr>
+										<td class="client-table__icon-cell">
+											<div class="client-table__icon-layout">
+												<div class="client-table__icon-bg m--success"></div>
+											</div>
+											<i class="client-table__icon m--success"></i>
+										</td>
+										<td>
+											<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
+										</td>
+										<td>Иванов Иван Иванович</td>
+										<td class="nobr">+7 (999) 715 96 85</td>
+										<td>Гармония</td>
+									</tr>
+									<tr>
+										<td class="client-table__icon-cell">
+											<div class="client-table__icon-layout">
+												<div class="client-table__icon-bg m--error"></div>
+											</div>
+											<i class="client-table__icon m--error"></i>
+										</td>
+										<td>
+											<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
+										</td>
+										<td>Иванов Иван Иванович</td>
+										<td class="nobr">+7 (999) 715 96 85</td>
+										<td>Гармония</td>
+									</tr>
+									<tr>
+										<td class="client-table__icon-cell">
+											<div class="client-table__icon-layout">
+												<div class="client-table__icon-bg m--wait"></div>
+											</div>
+											<i class="client-table__icon m--wait"></i>
+										</td>
+										<td>
+											<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
+										</td>
+										<td>Иванов Иван Иванович</td>
+										<td class="nobr">+7 (999) 715 96 85</td>
+										<td>Гармония</td>
+									</tr>
+									<tr>
+										<td class="client-table__icon-cell">
+											<div class="client-table__icon-layout">
+												<div class="client-table__icon-bg m--success"></div>
+											</div>
+											<i class="client-table__icon m--success"></i>
+										</td>
+										<td>
+											<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
+										</td>
+										<td>Иванов Иван Иванович</td>
+										<td class="nobr">+7 (999) 715 96 85</td>
+										<td>Гармония</td>
+									</tr>
+									<tr>
+										<td class="client-table__icon-cell">
+											<div class="client-table__icon-layout">
+												<div class="client-table__icon-bg m--success"></div>
+											</div>
+											<i class="client-table__icon m--success"></i>
+										</td>
+										<td>
+											<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
+										</td>
+										<td>Иванов Иван Иванович</td>
+										<td class="nobr">+7 (999) 715 96 85</td>
+										<td>Гармония</td>
+									</tr>
+									<tr>
+										<td class="client-table__icon-cell">
+											<div class="client-table__icon-layout">
+												<div class="client-table__icon-bg m--error"></div>
+											</div>
+											<i class="client-table__icon m--error"></i>
+										</td>
+										<td>
+											<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
+										</td>
+										<td>Иванов Иван Иванович</td>
+										<td class="nobr">+7 (999) 715 96 85</td>
+										<td>Гармония</td>
+									</tr>
+									<tr>
+										<td class="client-table__icon-cell">
+											<div class="client-table__icon-layout">
+												<div class="client-table__icon-bg m--wait"></div>
+											</div>
+											<i class="client-table__icon m--wait"></i>
+										</td>
+										<td>
+											<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
+										</td>
+										<td>Иванов Иван Иванович</td>
+										<td class="nobr">+7 (999) 715 96 85</td>
+										<td>Гармония</td>
+									</tr>
+									<tr>
+										<td class="client-table__icon-cell">
+											<div class="client-table__icon-layout">
+												<div class="client-table__icon-bg m--success"></div>
+											</div>
+											<i class="client-table__icon m--success"></i>
+										</td>
+										<td>
+											<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
+										</td>
+										<td>Иванов Иван Иванович</td>
+										<td class="nobr">+7 (999) 715 96 85</td>
+										<td>Гармония</td>
+									</tr>
+									<tr>
+										<td class="client-table__icon-cell">
+											<div class="client-table__icon-layout">
+												<div class="client-table__icon-bg m--success"></div>
+											</div>
+											<i class="client-table__icon m--success"></i>
+										</td>
+										<td>
+											<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
+										</td>
+										<td>Иванов Иван Иванович</td>
+										<td class="nobr">+7 (999) 715 96 85</td>
+										<td>Гармония</td>
+									</tr>
+									<tr>
+										<td class="client-table__icon-cell">
+											<div class="client-table__icon-layout">
+												<div class="client-table__icon-bg m--error"></div>
+											</div>
+											<i class="client-table__icon m--error"></i>
+										</td>
+										<td>
+											<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
+										</td>
+										<td>Иванов Иван Иванович</td>
+										<td class="nobr">+7 (999) 715 96 85</td>
+										<td>Гармония</td>
+									</tr>
+									<tr>
+										<td class="client-table__icon-cell">
+											<div class="client-table__icon-layout">
+												<div class="client-table__icon-bg m--wait"></div>
+											</div>
+											<i class="client-table__icon m--wait"></i>
+										</td>
+										<td>
+											<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
+										</td>
+										<td>Иванов Иван Иванович</td>
+										<td class="nobr">+7 (999) 715 96 85</td>
+										<td>Гармония</td>
+									</tr>
+									<tr>
+										<td class="client-table__icon-cell">
+											<div class="client-table__icon-layout">
+												<div class="client-table__icon-bg m--success"></div>
+											</div>
+											<i class="client-table__icon m--success"></i>
+										</td>
+										<td>
+											<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
+										</td>
+										<td>Иванов Иван Иванович</td>
+										<td class="nobr">+7 (999) 715 96 85</td>
+										<td>Гармония</td>
+									</tr>
+									<tr>
+										<td class="client-table__icon-cell">
+											<div class="client-table__icon-layout">
+												<div class="client-table__icon-bg m--success"></div>
+											</div>
+											<i class="client-table__icon m--success"></i>
+										</td>
+										<td>
+											<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
+										</td>
+										<td>Иванов Иван Иванович</td>
+										<td class="nobr">+7 (999) 715 96 85</td>
+										<td>Гармония</td>
+									</tr>
+									<tr>
+										<td class="client-table__icon-cell">
+											<div class="client-table__icon-layout">
+												<div class="client-table__icon-bg m--error"></div>
+											</div>
+											<i class="client-table__icon m--error"></i>
+										</td>
+										<td>
+											<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
+										</td>
+										<td>Иванов Иван Иванович</td>
+										<td class="nobr">+7 (999) 715 96 85</td>
+										<td>Гармония</td>
+									</tr>
+								</tbody>
+							</table>
+							<div id="client-active-full-list" class="client-full__list">
+								<div class="client-full__item">
+									<div class="client-full__info-item client-full__img is-completed">
+										<img src="img/success_doc_icon.png" alt="">
+									</div>
+									<div class="client-full__info-item client-full__contract-date">
+										Договор: <a href="">Название</a> от 12.01.2014 до 04.01.2017
+									</div>
+									<div class="client-full__info-item client-full__info-contact">
+										<div class="client-full__name-cl">Иванов Иван Иванович</div>
+										<div class="client-full__phone-cl">+7 (999) 715 96 85</div>
+									</div>
+									<div class="client-full__info-item client-full__status">
+										<div class="client-full__product-name">Гармония</div>
+									</div>
+								</div>
+
+								<div class="client-full__item">
+									<div class="client-full__info-item client-full__img is-error">
+										<img src="img/icon-doc-fail.png" alt="">
+									</div>
+									<div class="client-full__info-item client-full__contract-date">
+										Договор: <a href="">Название</a> от 12.01.2014 до 04.01.2017
+									</div>
+									<div class="client-full__info-item client-full__info-contact">
+										<div class="client-full__name-cl">Иванов Иван Иванович</div>
+										<div class="client-full__phone-cl">+7 (999) 715 96 85</div>
+									</div>
+									<div class="client-full__info-item client-full__status">
+										<div class="client-full__product-name">МБР</div>
+									</div>
+								</div>
+
+								<div class="client-full__item">
+									<div class="client-full__info-item client-full__img is-completed">
+										<img src="img/success_doc_icon.png" alt="">
+									</div>
+									<div class="client-full__info-item client-full__contract-date">
+										Договор: <a href="">Название</a> от 12.01.2014 до 04.01.2017
+									</div>
+									<div class="client-full__info-item client-full__info-contact">
+										<div class="client-full__name-cl">Иванов Иван Иванович</div>
+										<div class="client-full__phone-cl">+7 (999) 715 96 85</div>
+									</div>
+									<div class="client-full__info-item client-full__status">
+										<div class="client-full__product-name">Название продукта</div>
+									</div>
+								</div>
+							</div>
+							<div class="btn-box main-page__center">
+								<input type="button" class="btn btn-default" value="Показать все">
+							</div>
 						</div>
-						<table class="default-table client-table">
-							<thead>
-								<tr>
-									<th>Статус</th>
-									<th>Договор</th>
-									<th>Страхователь</th>
-									<th>Контакты</th>
-									<th>Продукт</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td class="client-table__icon-cell">
-										<div class="client-table__icon-layout">
-											<div class="client-table__icon-bg m--success"></div>
-										</div>
-										<i class="client-table__icon m--success"></i>
-									</td>
-									<td>
-										<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
-									</td>
-									<td>Иванов Иван Иванович</td>
-									<td class="nobr">+7 (999) 715 96 85</td>
-									<td>Гармония</td>
-								</tr>
-								<tr>
-									<td class="client-table__icon-cell">
-										<div class="client-table__icon-layout">
-											<div class="client-table__icon-bg m--error"></div>
-										</div>
-										<i class="client-table__icon m--error"></i>
-									</td>
-									<td>
-										<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
-									</td>
-									<td>Иванов Иван Иванович</td>
-									<td class="nobr">+7 (999) 715 96 85</td>
-									<td>Гармония</td>
-								</tr>
-								<tr>
-									<td class="client-table__icon-cell">
-										<div class="client-table__icon-layout">
-											<div class="client-table__icon-bg m--wait"></div>
-										</div>
-										<i class="client-table__icon m--wait"></i>
-									</td>
-									<td>
-										<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
-									</td>
-									<td>Иванов Иван Иванович</td>
-									<td class="nobr">+7 (999) 715 96 85</td>
-									<td>Гармония</td>
-								</tr>
-								<tr>
-									<td class="client-table__icon-cell">
-										<div class="client-table__icon-layout">
-											<div class="client-table__icon-bg m--success"></div>
-										</div>
-										<i class="client-table__icon m--success"></i>
-									</td>
-									<td>
-										<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
-									</td>
-									<td>Иванов Иван Иванович</td>
-									<td class="nobr">+7 (999) 715 96 85</td>
-									<td>Гармония</td>
-								</tr>
-								<tr>
-									<td class="client-table__icon-cell">
-										<div class="client-table__icon-layout">
-											<div class="client-table__icon-bg m--success"></div>
-										</div>
-										<i class="client-table__icon m--success"></i>
-									</td>
-									<td>
-										<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
-									</td>
-									<td>Иванов Иван Иванович</td>
-									<td class="nobr">+7 (999) 715 96 85</td>
-									<td>Гармония</td>
-								</tr>
-								<tr>
-									<td class="client-table__icon-cell">
-										<div class="client-table__icon-layout">
-											<div class="client-table__icon-bg m--error"></div>
-										</div>
-										<i class="client-table__icon m--error"></i>
-									</td>
-									<td>
-										<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
-									</td>
-									<td>Иванов Иван Иванович</td>
-									<td class="nobr">+7 (999) 715 96 85</td>
-									<td>Гармония</td>
-								</tr>
-								<tr>
-									<td class="client-table__icon-cell">
-										<div class="client-table__icon-layout">
-											<div class="client-table__icon-bg m--wait"></div>
-										</div>
-										<i class="client-table__icon m--wait"></i>
-									</td>
-									<td>
-										<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
-									</td>
-									<td>Иванов Иван Иванович</td>
-									<td class="nobr">+7 (999) 715 96 85</td>
-									<td>Гармония</td>
-								</tr>
-								<tr>
-									<td class="client-table__icon-cell">
-										<div class="client-table__icon-layout">
-											<div class="client-table__icon-bg m--success"></div>
-										</div>
-										<i class="client-table__icon m--success"></i>
-									</td>
-									<td>
-										<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
-									</td>
-									<td>Иванов Иван Иванович</td>
-									<td class="nobr">+7 (999) 715 96 85</td>
-									<td>Гармония</td>
-								</tr>
-								<tr>
-									<td class="client-table__icon-cell">
-										<div class="client-table__icon-layout">
-											<div class="client-table__icon-bg m--success"></div>
-										</div>
-										<i class="client-table__icon m--success"></i>
-									</td>
-									<td>
-										<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
-									</td>
-									<td>Иванов Иван Иванович</td>
-									<td class="nobr">+7 (999) 715 96 85</td>
-									<td>Гармония</td>
-								</tr>
-								<tr>
-									<td class="client-table__icon-cell">
-										<div class="client-table__icon-layout">
-											<div class="client-table__icon-bg m--error"></div>
-										</div>
-										<i class="client-table__icon m--error"></i>
-									</td>
-									<td>
-										<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
-									</td>
-									<td>Иванов Иван Иванович</td>
-									<td class="nobr">+7 (999) 715 96 85</td>
-									<td>Гармония</td>
-								</tr>
-								<tr>
-									<td class="client-table__icon-cell">
-										<div class="client-table__icon-layout">
-											<div class="client-table__icon-bg m--wait"></div>
-										</div>
-										<i class="client-table__icon m--wait"></i>
-									</td>
-									<td>
-										<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
-									</td>
-									<td>Иванов Иван Иванович</td>
-									<td class="nobr">+7 (999) 715 96 85</td>
-									<td>Гармония</td>
-								</tr>
-								<tr>
-									<td class="client-table__icon-cell">
-										<div class="client-table__icon-layout">
-											<div class="client-table__icon-bg m--success"></div>
-										</div>
-										<i class="client-table__icon m--success"></i>
-									</td>
-									<td>
-										<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
-									</td>
-									<td>Иванов Иван Иванович</td>
-									<td class="nobr">+7 (999) 715 96 85</td>
-									<td>Гармония</td>
-								</tr>
-								<tr>
-									<td class="client-table__icon-cell">
-										<div class="client-table__icon-layout">
-											<div class="client-table__icon-bg m--success"></div>
-										</div>
-										<i class="client-table__icon m--success"></i>
-									</td>
-									<td>
-										<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
-									</td>
-									<td>Иванов Иван Иванович</td>
-									<td class="nobr">+7 (999) 715 96 85</td>
-									<td>Гармония</td>
-								</tr>
-								<tr>
-									<td class="client-table__icon-cell">
-										<div class="client-table__icon-layout">
-											<div class="client-table__icon-bg m--error"></div>
-										</div>
-										<i class="client-table__icon m--error"></i>
-									</td>
-									<td>
-										<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
-									</td>
-									<td>Иванов Иван Иванович</td>
-									<td class="nobr">+7 (999) 715 96 85</td>
-									<td>Гармония</td>
-								</tr>
-								<tr>
-									<td class="client-table__icon-cell">
-										<div class="client-table__icon-layout">
-											<div class="client-table__icon-bg m--wait"></div>
-										</div>
-										<i class="client-table__icon m--wait"></i>
-									</td>
-									<td>
-										<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
-									</td>
-									<td>Иванов Иван Иванович</td>
-									<td class="nobr">+7 (999) 715 96 85</td>
-									<td>Гармония</td>
-								</tr>
-								<tr>
-									<td class="client-table__icon-cell">
-										<div class="client-table__icon-layout">
-											<div class="client-table__icon-bg m--success"></div>
-										</div>
-										<i class="client-table__icon m--success"></i>
-									</td>
-									<td>
-										<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
-									</td>
-									<td>Иванов Иван Иванович</td>
-									<td class="nobr">+7 (999) 715 96 85</td>
-									<td>Гармония</td>
-								</tr>
-								<tr>
-									<td class="client-table__icon-cell">
-										<div class="client-table__icon-layout">
-											<div class="client-table__icon-bg m--success"></div>
-										</div>
-										<i class="client-table__icon m--success"></i>
-									</td>
-									<td>
-										<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
-									</td>
-									<td>Иванов Иван Иванович</td>
-									<td class="nobr">+7 (999) 715 96 85</td>
-									<td>Гармония</td>
-								</tr>
-								<tr>
-									<td class="client-table__icon-cell">
-										<div class="client-table__icon-layout">
-											<div class="client-table__icon-bg m--error"></div>
-										</div>
-										<i class="client-table__icon m--error"></i>
-									</td>
-									<td>
-										<a href="">1234563423</a> от 12.01.2014 &nbsp;&nbsp;&nbsp;&nbsp;до 04.01.2017
-									</td>
-									<td>Иванов Иван Иванович</td>
-									<td class="nobr">+7 (999) 715 96 85</td>
-									<td>Гармония</td>
-								</tr>
-							</tbody>
-						</table>
+						<div class="main-page__content js-tab-content js-client-potencial" hidden>
+							<div class="client-table-ctrl main-page__client-table-ctrl">
+								<div class="client-table-ctrl__left">
+									<a href="#" class="btn btn-success btn-link"><i class="btn-add-user__icon"></i>Добавить</a>
+								</div>
+								<div class="client-table-ctrl__right">
+									<div class="input-box__value">
+										<input type="text" class="input-search" placeholder="ПОИСК">
+									</div>
+								</div>
+							</div>
+							<div class="client-full__list">
+
+								<div class="client-full__item">
+									<div class="client-full__info-item client-full__img is-waiting">
+										<img src="img/icon-sand-clock.png" alt="">
+									</div>
+									<div class="client-full__info-item client-full__info-contact">
+										<div class="client-full__name-link"> <a href="">Иванов Иван Иванович</a> </div>
+										<div class="client-full__phone">+7 (999) 759 95 96</div>
+									</div>
+									<div class="client-full__info-item client-full__contact-date">
+										<div>Дата последнего контакта:</div>
+										10.12.2016
+									</div>
+									<div class="client-full__info-item client-full__status">
+										Статус: <a href="">ожидание</a>
+									</div>
+								</div>
+								<div class="client-full__item">
+									<div class="client-full__info-item client-full__img is-waiting">
+										<img src="img/icon-sand-clock.png" alt="">
+									</div>
+									<div class="client-full__info-item client-full__info-contact">
+										<div class="client-full__name-link"> <a href="">Иванов Иван Иванович</a> </div>
+										<div class="client-full__phone">+7 (999) 759 95 96</div>
+									</div>
+									<div class="client-full__info-item client-full__contact-date">
+										<div>Дата последнего контакта:</div>
+										10.12.2016
+									</div>
+									<div class="client-full__info-item client-full__status">
+										Статус: <a href="">ожидание</a>
+									</div>
+								</div>
+								<div class="client-full__item">
+									<div class="client-full__info-item client-full__img is-waiting">
+										<img src="img/icon-sand-clock.png" alt="">
+									</div>
+									<div class="client-full__info-item client-full__info-contact">
+										<div class="client-full__name-link"> <a href="">Иванов Иван Иванович</a> </div>
+										<div class="client-full__phone">+7 (999) 759 95 96</div>
+									</div>
+									<div class="client-full__info-item client-full__contact-date">
+										<div>Дата последнего контакта:</div>
+										10.12.2016
+									</div>
+									<div class="client-full__info-item client-full__status">
+										Статус: <a href="">ожидание</a>
+									</div>
+								</div>
+								<div class="client-full__item">
+									<div class="client-full__info-item client-full__img is-waiting">
+										<img src="img/icon-sand-clock.png" alt="">
+									</div>
+									<div class="client-full__info-item client-full__info-contact">
+										<div class="client-full__name-link"> <a href="">Иванов Иван Иванович</a> </div>
+										<div class="client-full__phone">+7 (999) 759 95 96</div>
+									</div>
+									<div class="client-full__info-item client-full__contact-date">
+										<div>Дата последнего контакта:</div>
+										10.12.2016
+									</div>
+									<div class="client-full__info-item client-full__status">
+										Статус: <a href="">ожидание</a>
+									</div>
+								</div>
+								<div class="client-full__item">
+									<div class="client-full__info-item client-full__img is-waiting">
+										<img src="img/icon-sand-clock.png" alt="">
+									</div>
+									<div class="client-full__info-item client-full__info-contact">
+										<div class="client-full__name-link"> <a href="">Иванов Иван Иванович</a> </div>
+										<div class="client-full__phone">+7 (999) 759 95 96</div>
+									</div>
+									<div class="client-full__info-item client-full__contact-date">
+										<div>Дата последнего контакта:</div>
+										10.12.2016
+									</div>
+									<div class="client-full__info-item client-full__status">
+										Статус: <a href="">ожидание</a>
+									</div>
+								</div>
+							</div>
+							<div class="btn-box main-page__center">
+								<input type="button" class="btn btn-default" value="Показать все">
+							</div>
+						</div>
 					</div>
 					<div class="main-page__right">
 						<div class="side-box">
@@ -442,7 +665,7 @@
 					</div>
 				</div>
 			</div>
-			
+
 		</div>
 
 	</div>

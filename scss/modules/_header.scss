@@ -158,3 +158,28 @@
 		@include underline('first');
 	}
 }
+
+.header-sup {
+	background: #333;
+	padding: 8px 15px 6px;;
+	color: #fff;
+	font-size: 14px;
+	&__wrapper {
+		margin: 0 auto;
+		display: table;
+		width: 100%;
+		max-width: $base-wrapper-width;
+	}
+	& a {
+		color: #fff;
+	}
+	&__left {
+		display: table-cell;
+	}
+	&__right {
+		display: table-cell;
+		width: 200px;
+		text-align: right;
+		padding: 0 10px 0 5px;
+	}
+}
